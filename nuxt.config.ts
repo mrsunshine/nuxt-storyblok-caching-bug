@@ -6,9 +6,15 @@ export default defineNuxtConfig({
     [
       '@storyblok/nuxt',
       {
-        accessToken: 'M77EfG1Jp9GmIIcCwu4Zlgtt',
+        accessToken: 'YOUR PUBLIC ACCESS TOKEN',
         apiOptions: {
-          region: 'eu', // optional, default: 'eu'
+          region: 'eu', // optional, default: 'eu',
+          // Dirty workaround hack, disable caching
+          /*
+          cache: {
+            type: "none",
+          },
+          */
         },
       },
     ],
